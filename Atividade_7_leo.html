@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #textoSecreto {
+            display: none;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mostrarTexto()">Mostrar Texto Secreto</button>
+    <p id="textoSecreto">A Bruxa burra ainda esta</p>
+
+    <script>
+        function mostrarTexto() {
+            var texto = document.getElementById("textoSecreto");
+            if (texto.style.display === "none") {
+                texto.style.display = "block";
+            } else {
+                texto.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
